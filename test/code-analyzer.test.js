@@ -154,19 +154,7 @@ describe('The javascript parser', () => {
             '"function foo(x, y, z) {\\n    if (x + 1 + y < z) {\\n        return x + y + z + 5;\\n    } else {\\n        return x + y + z + z + 5;\\n    }\\n}"'
         );
     });
-
-    it('TEST 9', () => {
-        assert.equal(
-            JSON.stringify(parseCode('function foo(x, y, z){\n' +
-                '    if (x + 1 + y < z) {\n' +
-                '        return x + y + z + 5;\n' +
-                '    } else {\n' +
-                '        return x + y + z + z + 5;\n' +
-                '    }\n' +
-                '}\n')),
-            '"function foo(x, y, z) {\\n    if (x + 1 + y < z) {\\n        return x + y + z + 5;\\n    } else {\\n        return x + y + z + z + 5;\\n    }\\n}"'
-        );
-    });
+    
 
     it('TEST 10', () => {
         assert.equal(
