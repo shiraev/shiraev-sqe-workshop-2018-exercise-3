@@ -158,7 +158,7 @@ let start = function () {
     });
 };
 
-//Document.getElementById('');
+
 
 $(document).ready(function () {
     $('#codeSubmissionButton').click(() => {
